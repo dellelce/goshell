@@ -13,7 +13,7 @@ push:
 	@docker push $(TARGET)
 
 goshell:
-	@cd src && docker run -it --rm -v $$PWD:/src -w /src $(GOIMG)
+	@[ -d src ] && { cd src && docker run -it --rm -v $$PWD:/src -w /src $(GOIMG) ; } || { docker run -it --rm -v $$PWD:/src -w /src $(GOIMG) ; }
 
 run:
 	@docker run -it --rm $(TARGET)
