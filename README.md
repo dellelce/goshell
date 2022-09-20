@@ -1,1 +1,5 @@
-# go shell: container to do some interactive golang tasks
+# go shell
+
+container to do interactive golang work
+
+![actions](https://github.com/dellelce/goshell/actions/workflows/build.yml/badge.svg)
