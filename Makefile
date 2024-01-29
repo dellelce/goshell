@@ -1,6 +1,6 @@
-
-TARGET := ghcr.io/dellelce/goshell:1.19
-GOIMG  := golang:1.19-alpine
+VERSION := 1.19
+TARGET  := ghcr.io/dellelce/goshell:$(VERSION)
+GOIMG   := golang:$(VERSION)-alpine
 
 help:
 	@echo no help at the moment
