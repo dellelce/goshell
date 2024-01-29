@@ -1,0 +1,6 @@
+help      show this message
+build     build the image
+push      push image
+goshell   run test container
+run       run test container (without bind mounts)
+goimg     run base image
