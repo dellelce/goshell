@@ -1,4 +1,4 @@
-VERSION := 1.20
+VERSION := 1.21
 TARGET  := ghcr.io/dellelce/goshell:$(VERSION)
 GOIMG   := golang:$(VERSION)-alpine
 
