@@ -17,3 +17,6 @@ goshell:
 
 run:
 	@docker run -it --rm $(TARGET)
+
+goimg:
+	@docker run -it --rm $(GOIMG)
