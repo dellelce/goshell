@@ -1,4 +1,4 @@
-ARG version=1.21.2
+ARG version=1.21.5
 ARG source=golang:${version}-alpine
 FROM $source as source
 
