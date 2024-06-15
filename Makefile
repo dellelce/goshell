@@ -1,9 +1,12 @@
-VERSION := 1.21
+VERSION := $(shell cat version.txt)
 TARGET  := ghcr.io/dellelce/goshell:$(VERSION)
 GOIMG   := golang:$(VERSION)-alpine
 
 help:
 	@echo no help at the moment
+
+version:
+	@echo $(VERSION)
 
 build:
 	@docker build -t $(TARGET) .
